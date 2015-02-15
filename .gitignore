@@ -1,0 +1,7 @@
+.idea
+.env
+build
+composer.lock
+GPL_HEADER.txt
+/vendor
+/node_modules
