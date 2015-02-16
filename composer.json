@@ -1,9 +1,19 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"license": "MIT",
+	"name": "lasallecms/flagshipapp",
+	"description": "LaSalle Content Management System flagship app.",
+	"homepage": "http://lasallecms.com",
+	"keywords": ["laravel", "laravel5", "blog", "content", "cms", "LaSalleCMS", "South LaSalle", "Bob Bloom"],
+	"license": "GPL-3.0",
 	"type": "project",
+	"authors": [
+        {
+            "name": "Bob Bloom",
+            "email": "info@southlasalle.com",
+            "role": "Developer",
+            "homepage": "http://southlasalle.com"
+        }
+    ],
+
 	"require": {
 		"laravel/framework": "5.0.*"
 	},
@@ -13,7 +23,7 @@
 	},
 	"autoload": {
 		"classmap": [
-			"database"
+			"plumbing/database"
 		],
 		"psr-4": {
 			"App\\": "app/"
