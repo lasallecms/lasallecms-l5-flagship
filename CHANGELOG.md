@@ -7,25 +7,11 @@
 
 
 
-## V1.0.0 (02/27/2015)
+## V1.0.0 (02/16/2015)
 
-[All issues pertaining to "Milestone v1.0.0" on GitHub](https://github.com/lasallecms/lasallecms-l5-usermanagement-pkg/issues?q=is%3Aissue+milestone%3A%22Version+1.0.0%22)
+[Milestone v1.0.0 issues](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Version+1.0.0%22)
 
 ### Added
-* Initial version
-* Extracted native L5 auth stuff to this package
+* initial set-up
 
 
-
-
-### Deprecated
-- Nothing
-
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Noth
