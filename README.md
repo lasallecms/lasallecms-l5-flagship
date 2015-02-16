@@ -5,6 +5,10 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/lasallecms/lasallecms.svg?style=flat-square)](https://packagist.org/packages/lasallecms/lasallecms)
 [![GitHub Issues](https://img.shields.io/github/issues/lasallecms/lasallecms-l5-flagship.svg)](https://github.com/lasallecms/lasallecms-l5-flagship/issues)
 
+## NOTE
+
+LaSalleCMS is in active development. Not ready yet, but close.  
+
 ## Summary
 
 Laravel 5 Framework based Content Management System. 
