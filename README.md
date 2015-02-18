@@ -7,7 +7,7 @@
 
 ## NOTE
 
-LaSalleCMS is in active development. Not ready yet, but close.  
+LaSalleCMS is in active **Alpha** development  
 
 ## Summary
 
