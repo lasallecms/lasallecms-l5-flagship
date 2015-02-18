@@ -12,6 +12,7 @@
 				display: table;
 				font-weight: 100;
 				font-family: 'Lato';
+                background-color: darkmagenta;
 			}
 
 			.container {
@@ -38,8 +39,8 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="title">LaSalleCMS 2 made with the Laravel 5 Framework</div>
+				<!--<div class="quote">{{ Inspiring::quote() }}</div>-->
 			</div>
 		</div>
 	</body>
