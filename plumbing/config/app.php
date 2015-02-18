@@ -150,7 +150,7 @@ return [
         /*
 		 * My Package's Service Providers...
 		 */
-        'Lasallecms\Usermanagement\UsermanagementServiceProvider.php',
+        'Lasallecms\Usermanagement\UsermanagementServiceProvider',
 
 	],
 
