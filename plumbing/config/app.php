@@ -145,6 +145,13 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+
+
+        /*
+		 * My Package's Service Providers...
+		 */
+        'Lasallecms\Usermanagement\UsermanagementServiceProvider.php',
+
 	],
 
 	/*
