@@ -57,6 +57,8 @@ $app = new App\Application(
 |
 */
 
+
+// THIS STATEMENT PROFOUNDLY AFFECTS https://github.com/lasallecms/lasallecms-l5-flagship/issues/12
 $app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
 	'App\Http\Kernel'
