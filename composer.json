@@ -53,5 +53,15 @@
 	"config": {
 		"preferred-install": "dist"
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/lasallecms/lasallecms"
+      },
+      {
+        "type": "vcs",
+        "url": "https://github.com/lasallecms/usermanagement"
+      }
+  ]
 }
