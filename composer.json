@@ -57,11 +57,11 @@
     "repositories": [
       {
         "type": "vcs",
-        "url": "https://github.com/lasallecms/lasallecms"
+        "url": "https://github.com/lasallecms/lasallecms-l5-flagship.git"
       },
       {
         "type": "vcs",
-        "url": "https://github.com/lasallecms/usermanagement"
+        "url": "https://github.com/lasallecms/lasallecms-l5-usermanagement-pkg.git"
       }
   ]
 }
