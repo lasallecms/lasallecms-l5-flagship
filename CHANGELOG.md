@@ -1,10 +1,19 @@
 # CHANGE LOG
 
+## NEXT: VERSION 0.1.5 - 2015-02-28
 
-## NEXT: VERSION 0.1.4 - 2015-02-28
+### All GitHub issues for this version
+* [https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.5%22](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.5%22)
+
+
+## VERSION 0.1.4 - 2015-02-21
+
+## Modify
+* modifications in the pursuit of the User Management's initial auth extraction from the base L5 app
 
 ### All GitHub issues for this version
 * [https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.4%22](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.4%22)
+
 
 ## VERSION 0.1.3 - 2015-02-19
 
@@ -15,10 +24,10 @@
 * [https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.3%22](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.3%22)
 
 
-
 ## VERSION 0.1.2 - 2015-02-18
 
-### Add my User Management package
+### Add 
+* my User Management package
 
 ### All GitHub issues for this version
 * [https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.2%22](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.2%22)
@@ -27,7 +36,8 @@
 
 ## VERSION 0.1.1 - 2015-02-18
 
-### Created a bare-bones app with the auth removed. 
+### Add
+* bare-bones app with the auth removed. 
 
 ### All GitHub issues for this version
 * [https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.1%22](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.1%22)
