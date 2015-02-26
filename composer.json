@@ -17,6 +17,7 @@
 	"require": {
         "php": ">=5.5.0",
 		"laravel/framework": "5.0.*",
+		"guzzlehttp/guzzle": "~4.0",
 		"lasallecms/usermanagement": "dev-master"
 	},
 	"require-dev": {
