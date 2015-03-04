@@ -145,12 +145,15 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+		/*
+		 * Optional Dependency Service Providers...
+		 */
+		'Illuminate\Html\HtmlServiceProvider',
 
-
-        /*
+		/*
 		 * My Package's Service Providers...
 		 */
-        'Lasallecms\Usermanagement\UsermanagementServiceProvider',
+		'Lasallecms\Usermanagement\UsermanagementServiceProvider',
 
 	],
 
@@ -199,6 +202,12 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+		/*
+		 * Optional Dependency Aliases...
+		 */
+		'Form'  => 'Illuminate\Html\FormFacade',
+		'HTML'  => 'Illuminate\Html\HtmlFacade',
 
 	],
 
