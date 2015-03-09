@@ -148,14 +148,19 @@ return [
 		/*
 		 * Optional Dependency Service Providers...
 		 */
-		'Illuminate\Html\HtmlServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
+        'Illuminate\Html\HtmlServiceProvider',
 
 		/*
 		 * My Package's Service Providers...
 		 */
-		'Lasallecms\Usermanagement\UsermanagementServiceProvider',
+        'Lasallecms\Usermanagement\UsermanagementServiceProvider',
+        'Lasallecms\Lasallecmsadmin\LasallecmsadminServiceProvider',
+        'Lasallecms\Lasallecmsfrontend\LasallecmsfrontendServiceProvider',
+        'Lasallecms\Lasallecmsapi\LasallecmsapiServiceProvider',
 
-	],
+
+    ],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -206,6 +211,7 @@ return [
 		/*
 		 * Optional Dependency Aliases...
 		 */
+        'Debugbar' => 'Barryvdh\Debugbar\Facade',
 		'Form'  => 'Illuminate\Html\FormFacade',
 		'HTML'  => 'Illuminate\Html\HtmlFacade',
 
