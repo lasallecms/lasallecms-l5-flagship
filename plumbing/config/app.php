@@ -158,6 +158,7 @@ return [
         'Lasallecms\Lasallecmsadmin\LasallecmsadminServiceProvider',
         'Lasallecms\Lasallecmsfrontend\LasallecmsfrontendServiceProvider',
         'Lasallecms\Lasallecmsapi\LasallecmsapiServiceProvider',
+        'Lasallecms\Helpers\HelpersServiceProvider',
 
 
     ],
@@ -214,6 +215,11 @@ return [
         'Debugbar' => 'Barryvdh\Debugbar\Facade',
 		'Form'  => 'Illuminate\Html\FormFacade',
 		'HTML'  => 'Illuminate\Html\HtmlFacade',
+
+        /*
+		 * My Package's Facades...
+		 */
+        'Lasallecms\Helpers\HelpersFacade',
 
 	],
 

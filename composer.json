@@ -22,7 +22,8 @@
 		"lasallecms/usermanagement": "dev-master",
 		"lasallecms/lasallecmsapi": "dev-master",
 		"lasallecms/lasallecmsadmin": "dev-master",
-		"lasallecms/lasallecmsfrontend": "dev-master"
+		"lasallecms/lasallecmsfrontend": "dev-master",
+		"lasallecms/helpers": "dev-master"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
