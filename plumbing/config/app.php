@@ -219,7 +219,7 @@ return [
         /*
 		 * My Package's Facades...
 		 */
-        'Lasallecms\Helpers\HelpersFacade',
+
 
 	],
 
