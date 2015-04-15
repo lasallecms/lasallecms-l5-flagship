@@ -9,7 +9,7 @@ class UserTest extends DbTestCase {
 
     public function setUp() {
 
-        parent:setUp();
+        //parent:setUp();
     }
 
     /**
@@ -19,6 +19,12 @@ class UserTest extends DbTestCase {
      */
     public function testBasicExample()
     {
+
+	// DO NOT WANT TO RUN THIS FILE RIGHT NOW.
+	return;
+
+
+
         echo "\n\r----------------------------------------";
         echo "\n\rSTART: testBasicExample()\n\r";
 
@@ -57,7 +63,7 @@ class UserTest extends DbTestCase {
 
     public function tearDown()
     {
-        parent::tearDown();
+        //parent::tearDown();
     }
 
 }
