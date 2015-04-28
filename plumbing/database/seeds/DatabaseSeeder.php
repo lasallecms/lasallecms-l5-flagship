@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder {
         // UserManagement & CMS API packages are mandatory
 		$this->call('UsermanagementTableSeeder');
         $this->call('LasallecmsapiTableSeeder');
-        
+
 
         // LaSalleCRM is optional
         if ( File::exists($this->application->databasePath() . '/seeds/LasallecrmapiTableSeeder.php') )
