@@ -149,7 +149,7 @@ return [
 		 * Optional Dependency Service Providers...
 		 */
         'Barryvdh\Debugbar\ServiceProvider',
-        'Illuminate\Html\HtmlServiceProvider',
+        'Collective\Html\HtmlServiceProvider',
 
 		/*
 		 * My Package's Service Providers...
@@ -213,8 +213,8 @@ return [
 		 * Optional Dependency Aliases...
 		 */
         'Debugbar' => 'Barryvdh\Debugbar\Facade',
-		'Form'  => 'Illuminate\Html\FormFacade',
-		'HTML'  => 'Illuminate\Html\HtmlFacade',
+		'Form'  => 'Collective\Html\FormFacade',
+		'HTML'  => 'Collective\Html\HtmlFacade',
 
         /*
 		 * My Package's Facades...
