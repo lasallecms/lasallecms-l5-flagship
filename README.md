@@ -62,11 +62,22 @@ The coding is straight forward, understandable, and commented.
 
 Those who know L5 will hit the ground running. Those familiar with Laracasts will note its influence. 
 
+Those familiar with the [League of Extraordinary Packages](https://thephpleague.com/#quality) will note its influence.
 
-## Usage
+## Contracts, Implementing Contracts, and Interfaces
 
+[![Go Where You Wanna Go](https://i.ytimg.com/vi/joPUjfx1JRg/mqdefault.jpg)](https://www.youtube.com/watch?v=joPUjfx1JRg "Go Where You Wanna Go")
 
+LaSalleCMS API package phase one completion contains contracts for the repositories. Each model has its own repository, which has its own separate contract. The base repository has its contract. 
 
+I love interfaces. Using them for Form Processing is a boon, providing a kick-ass uniform structure for command handlers. This consistency is the crucial basis for an "automation" refactoring.
+
+The L5 is big with interfaces.
+
+But... sometimes ya gotta go where yer going to go. And repository interfaces are frustrating me greatly. So I am dispensing with them. For you purists out there, the repository interfaces existed in full glory in phase one admin side completion of LaSalleCMS, but are dispensed with for version one release after much angst.
+ 
+News flash: LaSalle Software is married to eloquent. Period. Full stop. I have no plans to make LaSalle Software "agnostic" when it comes to eloquent.
+  
 ## Security
 
 If you discover any security related issues, please email Bob Bloom at "info at southlasalle dot com" instead of using the issue tracker.
