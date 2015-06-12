@@ -29,6 +29,10 @@
  *
  */
 
+
+// NOT OVERRIDING DEFAULT PATHS, BUT LEAVING THIS CLASS HERE FOR REFERENCE
+
+
 /*
  * This class overrides default paths
  */
@@ -42,7 +46,7 @@ class Application extends \Illuminate\Foundation\Application
      */
     public function configPath()
     {
-        return $this->basePath.'/plumbing/config';
+        //return $this->basePath.'/plumbing/config';
     }
 
     /**
@@ -52,7 +56,7 @@ class Application extends \Illuminate\Foundation\Application
      */
     public function databasePath()
     {
-        return $this->basePath.'/plumbing/database';
+        //return $this->basePath.'/plumbing/database';
 
 
     }
@@ -65,7 +69,7 @@ class Application extends \Illuminate\Foundation\Application
      */
     public function storagePath()
     {
-        return $this->basePath.'/plumbing/storage';
+        //return $this->basePath.'/plumbing/storage';
     }
 
 }
