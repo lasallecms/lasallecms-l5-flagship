@@ -1,10 +1,16 @@
 <?php
 
+
+// IF ARTISAN SAYS THAT SEEDER FILES NOT FOUND, RUN composer dump-autoload
+
+
+// Laravel classes
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
 class DatabaseSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *
@@ -16,18 +22,19 @@ class DatabaseSeeder extends Seeder
 
         $this->call('UsermanagementTableSeeder');
 
-	$this->call('LasallecmsapiTableSeeder');
+        $this->call('LasallecmsapiTableSeeder');
 
-	if ( File::exists($this->application->databasePath() . '/seeds/LasallecrmapiTableSeeder.php') )
-	{
-		$this->call('LasallecrmapiTableSeeder');
-	}
+        // database_path function is a L5.1 helper function
+        if ( File::exists(database_path() . '/seeds/LasallecrmapiTableSeeder.php') )
+        {
+            $this->call('LasallecrmapiTableSeeder');
+        }
 
-	if ( File::exists($this->application->databasePath() . '/seeds/TodoTableSeeder.php') )
-	{
-		$this->call('TodoTableSeeder');
-	}
+        if ( File::exists(database_path() . '/seeds/TodoTableSeeder.php') )
+        {
+            $this->call('TodoTableSeeder');
+        }
 
-        Model::reguard();
+            Model::reguard();
     }
 }
