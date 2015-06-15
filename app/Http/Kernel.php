@@ -26,8 +26,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth'       => Lasallecms\Usermanagement\Http\Middleware\Authenticate::class,
+        'auth'       => \Lasallecms\Usermanagement\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest'      => Lasallecms\Usermanagement\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest'      => \Lasallecms\Usermanagement\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }
