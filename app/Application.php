@@ -1,4 +1,5 @@
-<?php namespace App;
+<?php
+namespace App;
 
 /**
  *
@@ -38,7 +39,6 @@
  */
 class Application extends \Illuminate\Foundation\Application
 {
-
     /**
      * Get the path to the application configuration files.
      *
