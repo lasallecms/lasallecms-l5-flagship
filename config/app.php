@@ -161,6 +161,7 @@ return [
         Lasallecms\Helpers\HelpersServiceProvider::class,
 	Lasallecms\Formhandling\FormHandlingServiceProvider::class,
 	Lasallecms\Contact\ContactServiceProvider::class,
+	Lasallecms\Knowledgebase\KnowledgebaseServiceProvider::class,
 	Lasallecrm\Lasallecrmapi\LasallecrmapiServiceProvider::class,
 	Lasallecrm\Lasallecrmadmin\LasallecrmadminServiceProvider::class,
 	Lasallecrm\Listmanagement\ListmanagementServiceProvider::class,

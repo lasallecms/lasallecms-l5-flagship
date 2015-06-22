@@ -25,6 +25,7 @@
 	"lasallecms/formhandling": "dev-master",
 	"lasallecms/helpers": "dev-master",
 	"lasallecms/contact": "dev-master",
+	"lasallecms/knowledgebase": "dev-master",
 	"lasallecrm/lasallecrmapi": "dev-master",
 	"lasallecrm/lasallecrmadmin": "dev-master",
 	"lasallecrm/listmanagement": "dev-master",
