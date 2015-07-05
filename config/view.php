@@ -11,10 +11,12 @@ return [
     | an array of paths that should be checked for your views. Of course
     | the usual Laravel view path has already been registered for you.
     |
+    | THE DEFAULT LASALLE SOFTWARE PATH HAS ALREADY BEEN REGISTERED FOR YOU!
+    |
     */
 
     'paths' => [
-        realpath(base_path('resources/views')),
+        realpath(base_path('resources/views/lasalle')),
     ],
 
     /*
