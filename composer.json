@@ -16,32 +16,33 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-	"laravelcollective/html": "~5.0",
-	"guzzlehttp/guzzle": "~6.0",
-	"lasallecms/usermanagement": "dev-master",
-	"lasallecms/lasallecmsapi": "dev-master",
-	"lasallecms/lasallecmsadmin": "dev-master",
-	"lasallecms/lasallecmsfrontend": "dev-master",
-	"lasallecms/formhandling": "dev-master",
-	"lasallecms/helpers": "dev-master",
-	"lasallecms/contact": "dev-master",
-	"lasallecms/knowledgebase": "dev-master",
-	"lasallecrm/lasallecrmapi": "dev-master",
-	"lasallecrm/lasallecrmadmin": "dev-master",
-	"lasallecrm/listmanagement": "dev-master",
-	"lasallecrm/todo": "dev-master"
+        "laravelcollective/html": "~5.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "lasallecms/usermanagement": "dev-master",
+        "lasallecms/lasallecmsapi": "dev-master",
+        "lasallecms/lasallecmsadmin": "dev-master",
+        "lasallecms/lasallecmsfrontend": "dev-master",
+        "lasallecms/formhandling": "dev-master",
+        "lasallecms/helpers": "dev-master",
+        "lasallecms/contact": "dev-master",
+        "lasallecms/knowledgebase": "dev-master",
+        "lasallecrm/lasallecrmapi": "dev-master",
+        "lasallecrm/lasallecrmadmin": "dev-master",
+        "lasallecrm/listmanagement": "dev-master",
+        "lasallecrm/todo": "dev-master",
+        "intervention/image": "~2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
         "phpspec/phpspec": "~2.1",
-	"barryvdh/laravel-debugbar": "~2.0"
+	    "barryvdh/laravel-debugbar": "~2.0"
     },
     "autoload": {
         "classmap": [
             "database",
-	    "database/seeds"
+	        "database/seeds"
         ],
         "psr-4": {
             "App\\": "app/"

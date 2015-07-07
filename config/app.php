@@ -150,6 +150,7 @@ return [
 	 */
         Barryvdh\Debugbar\ServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
 	/*
 	 * My Package's Service Providers...
@@ -159,13 +160,13 @@ return [
         Lasallecms\Lasallecmsfrontend\LasallecmsfrontendServiceProvider::class,
         Lasallecms\Lasallecmsapi\LasallecmsapiServiceProvider::class,
         Lasallecms\Helpers\HelpersServiceProvider::class,
-	Lasallecms\Formhandling\FormHandlingServiceProvider::class,
-	Lasallecms\Contact\ContactServiceProvider::class,
-	Lasallecms\Knowledgebase\KnowledgebaseServiceProvider::class,
-	Lasallecrm\Lasallecrmapi\LasallecrmapiServiceProvider::class,
-	Lasallecrm\Lasallecrmadmin\LasallecrmadminServiceProvider::class,
-	Lasallecrm\Listmanagement\ListmanagementServiceProvider::class,
-	Lasallecrm\Todo\TodoServiceProvider::class
+        Lasallecms\Formhandling\FormHandlingServiceProvider::class,
+        Lasallecms\Contact\ContactServiceProvider::class,
+        Lasallecms\Knowledgebase\KnowledgebaseServiceProvider::class,
+        Lasallecrm\Lasallecrmapi\LasallecrmapiServiceProvider::class,
+        Lasallecrm\Lasallecrmadmin\LasallecrmadminServiceProvider::class,
+        Lasallecrm\Listmanagement\ListmanagementServiceProvider::class,
+        Lasallecrm\Todo\TodoServiceProvider::class
     ],
 
     /*
@@ -218,11 +219,12 @@ return [
 	 * Optional Dependency Aliases...
 	 */
         'Debugbar'  => Barryvdh\Debugbar\Facade::class,
-	'Form'      => Collective\Html\FormFacade::class,
-	'HTML'      => Collective\Html\HtmlFacade::class,
+        'Form'      => Collective\Html\FormFacade::class,
+        'HTML'      => Collective\Html\HtmlFacade::class,
+        'Image'     => Intervention\Image\Facades\Image::class,
 
-        /*
-	 * My Package's Facades...
+    /*
+	 * My Packages' Facades...
 	 */
 	// none!
 
