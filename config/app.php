@@ -152,6 +152,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
+        Roumen\Sitemap\SitemapServiceProvider::class,
 
 	/*
 	 * My Package's Service Providers...

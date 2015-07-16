@@ -38,7 +38,8 @@
         "phpunit/phpunit": "~4.0",
         "phpspec/phpspec": "~2.1",
 	    "barryvdh/laravel-debugbar": "~2.0",
-	    "roumen/feed": "~2.9"
+	    "roumen/feed": "~2.9",
+	    "roumen/sitemap": "2.5.*"
     },
     "autoload": {
         "classmap": [
