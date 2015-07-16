@@ -151,6 +151,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Roumen\Feed\FeedServiceProvider::class,
 
 	/*
 	 * My Package's Service Providers...
@@ -222,6 +223,7 @@ return [
         'Form'      => Collective\Html\FormFacade::class,
         'HTML'      => Collective\Html\HtmlFacade::class,
         'Image'     => Intervention\Image\Facades\Image::class,
+        'Feed'      => Roumen\Feed\Facades\Feed::class,
 
     /*
 	 * My Packages' Facades...
