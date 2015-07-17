@@ -153,6 +153,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
         Roumen\Sitemap\SitemapServiceProvider::class,
+        Spatie\Backup\BackupServiceProvider::class,
 
 	/*
 	 * My Package's Service Providers...

@@ -39,7 +39,9 @@
         "phpspec/phpspec": "~2.1",
 	    "barryvdh/laravel-debugbar": "~2.0",
 	    "roumen/feed": "~2.9",
-	    "roumen/sitemap": "2.5.*"
+	    "roumen/sitemap": "2.5.*",
+	    "spatie/laravel-backup": "dev-master",
+	    "league/flysystem-aws-s3-v3": "~1.0"
     },
     "autoload": {
         "classmap": [
