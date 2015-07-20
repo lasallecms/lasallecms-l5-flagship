@@ -1,1 +1,0 @@
-<h1>You are not authorized to view the front-end!</h1>
