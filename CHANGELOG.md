@@ -1,11 +1,12 @@
 # CHANGE LOG
 
-## NEXT: VERSION 0.1.6 - 2015-02-28
+## VERSION 1.0 - 2015-07-31
 
 ### All GitHub issues for this version
-* [https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.6%22](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=is%3Aissue+milestone%3A%22Version+0.1.6%22)
+* [https://github.com/lasallecms/lasallecms-l5-flagship/milestones/Version%201.0](https://github.com/lasallecms/lasallecms-l5-flagship/milestones/Version%201.0)
 
-## NEXT: VERSION 0.1.5 - 2015-02-22
+
+## VERSION 0.1.5 - 2015-02-22
 
 ### Fix
 * accommodate package installation
