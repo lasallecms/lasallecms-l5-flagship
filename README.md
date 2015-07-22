@@ -10,74 +10,46 @@
 
 ## NOTE
 
-LaSalleCMS is in active **Alpha** development  
+This is the flagship app for my LaSalle Software. 
 
 ## Summary
 
-Laravel 5 Framework based Content Management System. 
+LaSalle Software is my Laravel 5.1 based web application software. 
 
-Works on its own. Also acts as the foundational base for custom app development.
+LaSalle Software is comprised primarily of inter-related packages. This is the only app that I offer, whose sole purpose is to serve as our LaSalle-Laravel starting point. 
 
-LaSalleCMS is my own content system used for my own, and client, sites. 
+## Description
 
+LaSalle Software is crafted with love and care for myself; and, for my clients.
+
+LaSalle Software is Free Open Source Software. However, it is not an open source project. There is no commitment to bring online documentation to fruition, nor for other facets associated with running an open source project.
  
-## Shpiel
+LaSalle Software makes custom web applications economically accessible to clients who would otherwise turn to Joomla or WordPress (my own specialties, which is why I mention 'em). We need to craft web applications, not build websites, for ourselves.
 
-I spent years and years specializing in Joomla.
+The Laravel Framework for PHP, version 5.1, is the hottest such framework out there. For all its tremendous technical achievements, L5.1 represents an economic achievement, bringing down the cost of undertaking web applications. 
 
-You know what I loved about the early days of Joomla? How understandable and customizable it really was. The source code was incredibly hackable, the templates were customizable. I was in control. It was great! 
-
-Then came the rise of the template frameworks and new Joomla versions, and things became different.
-
-When I moved on from Joomla in April 2014, the notion of building my own content system was far from my mind:
-
-* why recreate something that is already out there as free open source software? 
-* how can I hope to recreate all the features of these other projects?
-* people will be terrified to use my software because "it's just one guy doing it"
-
-After searching for the perfect blogging/content system that suited my sensibilities, you know what I discovered? I discovered that: 
-
-* no such system exists;
-* the marketplace shares my frustration to an extent that shocked me;
-* there are a number of major independent cms projects going on;
-* there is a huge DIY movement.
-
-I was quite surprised to find my frustrations to be more mainstream than marginalized. Nothing encapsulated my experience more than the discovery of the [Grav](http://www.rockettheme.com/blog/team/163-rockettheme-s-10th-anniversary-interview-with-andy-miller) project by one of the Joomla founders who runs one of the longest running template clubs. I see that in conjunction with Grav is a Gantry re-write. The money quote:
-
-<blockquote>
-We were looking to add support for a simpler platform, but after extensively evaluating all the options, we couldn’t find a good solution. So, we built our own.
-</blockquote>
-
-So are a lot of people building their own, so I discovered. 
-
-Like a lot of people, I learned Laravel by creating a blog app. Which I built-out, calling it LaSalleCMS v1. All my sites except my Media site, use it.
+However, getting from the superb Laravel Framework to your actual web application is a big leap. My LaSalle Software is this leap.
  
-## Coding Style 
+LaSalle Software, especially the LaSalle Content Management System, is offered as Free Open Source Software for the purpose of making the LaSalle-Laravel web application combination economically accessible. 
 
-LaSalleCMS v2 is built lovingly with the superb Laravel 5 Framework.
+Caveat: sometimes, it won't be so feasible. We are still at the beginnings of this shift.
+   
+LaSalle Software: web app power, website prices.
+
+
+## Straight Ahead Software
  
-Under-engineered but not under-sophisticated, LaSalleCMS harnesses the underneath power of Laravel 5. 
+LaSalle Software is straight ahead software. No funny business. No proprietary crap. No weirdness to frustrate other devs.
  
-The coding is straight forward, understandable, and commented. 
+Anyone who knows Laravel will understand my software (and will note the "LaraCast-y" influences).
 
-Those who know L5 will hit the ground running. Those familiar with Laracasts will note its influence. 
-
-Those familiar with the [League of Extraordinary Packages](https://thephpleague.com/#quality) will note its influence.
-
-## Contracts, Implementing Contracts, and Interfaces
-
-[![Go Where You Wanna Go](https://i.ytimg.com/vi/joPUjfx1JRg/mqdefault.jpg)](https://www.youtube.com/watch?v=joPUjfx1JRg "Go Where You Wanna Go")
-
-LaSalleCMS API package phase one completion contains contracts for the repositories. Each model has its own repository, which has its own separate contract. The base repository has its contract. 
-
-I love interfaces. Using them for Form Processing is a boon, providing a kick-ass uniform structure for command handlers. This consistency is the crucial basis for an "automation" refactoring.
-
-The L5 is big with interfaces.
-
-But... sometimes ya gotta go where yer going to go. And repository interfaces are frustrating me greatly. So I am dispensing with them. For you purists out there, the repository interfaces existed in full glory in phase one admin side completion of LaSalleCMS, but are dispensed with for version one release after much angst.
+## Administrative Form Automation
  
-News flash: LaSalle Software is married to eloquent. Period. Full stop. I have no plans to make LaSalle Software "agnostic" when it comes to eloquent.
-  
+There is only one area that is unabashedly "Bob-ish": my administrative form automation. This area, properly so, is not addressed in the Framework. There are many ideas out there about streamlined ways to create administration forms. However, I need a version that fits my LaSalle Software. So I came up with my own innovation to address this need. 
+ 
+Admin form automation represents an important economic feature. Without having to hand-craft the admin forms, we speed up "spinning up" web app packages. 
+   
+
 ## Security
 
 If you discover any security related issues, please email Bob Bloom at "info at southlasalle dot com" instead of using the issue tracker.
