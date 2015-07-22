@@ -48,6 +48,8 @@ class Kernel extends ConsoleKernel
         \Spatie\Backup\Commands\BackupCommand::class,
     ];
 
+
+
     /**
      * Define the application's command schedule.
      *
@@ -56,9 +58,13 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $filePath = base_path() . 'output_from_scheduler';
+        $emailTo  = "foo@example.com";
+
         $schedule->command('BackupCommand')
                  ->dailyAt('04:00')
-                 ->emailOutputTo('foo@example.com')
+                 ->sendOutputTo($filePath)
+                 ->emailOutputTo($emailTo)
         ;
 
         $schedule->call(function () {
