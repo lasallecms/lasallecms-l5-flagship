@@ -34,6 +34,11 @@ class DatabaseSeeder extends Seeder
         {
             $this->call('TodoTableSeeder');
         }
+        
+        if ( File::exists(database_path() . '/seeds/LasallecastapiTableSeeder.php') )
+        {
+            $this->call('LasallecastapiTableSeeder');
+        }
 
             Model::reguard();
     }
