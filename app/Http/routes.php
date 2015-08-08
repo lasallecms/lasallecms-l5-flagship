@@ -46,7 +46,7 @@
 
 // single post by slug, or category listing (by title)
 // originally in my front-end package
-$router->get('{slug}', '\Lasallecms\Lasallecmsfrontend\Http\Controllers\TriageController@triage');
+$router->get('{slug}', '\Lasallecms\Lasallecmsfrontend\Http\Controllers\TriageController@triage')->where('slug', '!=', 'admin');
 
 // Home
 // originally in my front-end package
