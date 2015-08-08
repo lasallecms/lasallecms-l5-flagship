@@ -55,3 +55,13 @@ $router->get('/', [
     'uses' => '\Lasallecms\Lasallecmsfrontend\Http\Controllers\TriageController@home',
 
 ]);
+
+
+
+// Route for my contact package's thank you page. Here for convenience only
+/*
+Route::get('contact_form_thank_you',[
+    'as'   => 'contact_form_thank_you',
+    'uses' => 'ContactController@thankyou'
+]);
+*/
