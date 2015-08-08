@@ -29,13 +29,29 @@
  */
 
 
+/* *********************************************************************************************** */
+/* *********************************************************************************************** */
 /*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+ *  Originally, I placed front-end routes in \Lasallecms\Lasallecmsfrontend\Http\routes.php.
+ *  Seems like a good idea because the standard front-end routes emanate from this package. But, not
+ *  such a great idea when it's desirable to customize those routes.
+ *
+ *  To allow the "home" and "{slug}" to be customized -- or over-ridden -- I am extracting the two main
+ *  routes out of my front-end package, and placing them here in my Flagship's route.php.
+ *
+ */
+/* *********************************************************************************************** */
+/* *********************************************************************************************** */
+
+
+// single post by slug, or category listing (by title)
+// originally in my front-end package
+$router->get('{slug}', '\Lasallecms\Lasallecmsfrontend\Http\Controllers\TriageController@triage');
+
+// Home
+// originally in my front-end package
+$router->get('/', [
+    'as'   => 'home',
+    'uses' => '\Lasallecms\Lasallecmsfrontend\Http\Controllers\TriageController@home',
+
+]);
