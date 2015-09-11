@@ -19,39 +19,33 @@ This is the flagship app for my LaSalle Software.
 
 LaSalle Software is my Laravel 5.1 based web application software. 
 
-LaSalle Software is comprised primarily of inter-related packages. This is the only app that I offer, whose sole purpose is to serve as our LaSalle-Laravel starting point. 
+LaSalle Software is comprised of inter-related packages that work together. This flagship app is the starting point for LaSalle Software based apps.
+
 
 ## Description
 
-LaSalle Software is crafted with love and care for myself; and, for my clients.
+Laravel 5.1 is a superb PHP framework. I am very happy that I chose to specialize in Laravel. 
 
-LaSalle Software is Free Open Source Software. However, it is not an open source project. There is no commitment to bring online documentation to fruition, nor to bring to fruition other facets associated with running an open source project.
- 
-LaSalle Software makes custom web applications economically accessible to clients who would otherwise turn to Joomla or WordPress (my own specialties, which is why I mention 'em). We need to craft web applications, not build websites, for ourselves.
+Laravel is not in-and-of-itself a ready-made web application that you just unfurl and your basic site is there. For instance, there is no built-in blog. By design. Laravel is a framework with which to build your web app. It is not itself a web app. 
 
-The Laravel Framework for PHP, version 5.1, is the hottest such framework out there. For all its tremendous technical achievements, L5.1 represents an economic achievement, bringing down the cost of undertaking web applications. 
+I set out to create the extra web app "infrastructure" based on Laravel. A ready-made blog. A ready-made administration site. A ready-made user management piece. The type of thing that are common to most web applications. This web app "infrastructure" became LaSalle Software. 
 
-However, getting from the superb Laravel Framework to your actual web application is a big leap. My LaSalle Software is this leap.
- 
-LaSalle Software, especially the LaSalle Content Management System, is offered as Free Open Source Software for the purpose of making the LaSalle-Laravel web application combination economically accessible -- for myself, and for my clients. 
-
-[Caveat: sometimes, it won't be so feasible. We are still at the beginnings of this shift.]
-   
-LaSalle Software: web app power, website prices.
-
-
-## Straight Ahead Software
- 
-LaSalle Software is straight ahead software. No funny business. No proprietary crap. No weirdness to frustrate other devs.
- 
-Anyone who knows Laravel will understand my software (and will note the "LaraCast-y" influences).
+Central to LaSalle Software is the LaSalle Content Management System. Created as a suite of inter-related packages, LaSalleCMS is "the blog"; and, serves as the foundation for building out web applications. 
 
 ## Administrative Form Automation
+
+Once I had LaSalleCMS to the point where I could actually build out custom web apps, I started building out my own web apps. In so doing, I discovered that there "had to be a better" way to create administration forms, because hand crafting the forms in general, and hand crafting the forms within LaSalle Software, took a lot of time. 
+
+So I created LaSalle's Administrative Form Automation that automates much of the "spinning up" of the forms. 
  
 There is only one area that is unabashedly "Bob-ish": my administrative form automation. This area, properly so, is not addressed in the Framework. There are many ideas out there about streamlined ways to create administration forms. However, I need a version that fits my LaSalle Software. So I came up with my own innovation to address this need. 
  
-Admin form automation represents an important economic feature. Without having to hand-craft the admin forms, we speed up "spinning up" web app packages. 
-   
+Admin form automation represents an important economic feature. Without having to hand-craft the admin forms, "spinning up" web app packages got a whole lot faster. 
+
+My admin form automation is deeply inspired by the fabulous [Akeeba Framework on Framework](https://github.com/akeeba/fof), which was the basis for my LaSalleMart ecommerce extension for Joomla 3.x. 
+
+Admin form automation is the most "bespoke" aspect of LaSalle Software (IMO), as I innovated to satisfy a deep fundamental need. 
+
 
 ## Security
 
