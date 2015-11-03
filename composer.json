@@ -33,7 +33,7 @@
         "intervention/image": "~2.3",
         "roumen/feed": "~2.9",
         "roumen/sitemap": "2.5.*",
-        "spatie/laravel-backup": "dev-master",
+        "spatie/laravel-backup": "2.*",
         "league/flysystem-aws-s3-v3": "~1.0"
     },
     "require-dev": {
