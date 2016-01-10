@@ -154,6 +154,7 @@ return [
         Roumen\Feed\FeedServiceProvider::class,
         Roumen\Sitemap\SitemapServiceProvider::class,
         Spatie\Backup\BackupServiceProvider::class,
+        Aloha\Twilio\Support\Laravel\L5ServiceProvider::class,
 
 	/*
 	 * My Package's Service Providers...
@@ -226,6 +227,7 @@ return [
         'HTML'      => Collective\Html\HtmlFacade::class,
         'Image'     => Intervention\Image\Facades\Image::class,
         'Feed'      => Roumen\Feed\Facades\Feed::class,
+        'Twilio'    => Aloha\Twilio\Support\Laravel\Facade::class,
 
     /*
 	 * My Packages' Facades...
