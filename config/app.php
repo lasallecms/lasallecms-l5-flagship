@@ -170,8 +170,15 @@ return [
         Lasallecrm\Lasallecrmapi\LasallecrmapiServiceProvider::class,
         Lasallecrm\Lasallecrmadmin\LasallecrmadminServiceProvider::class,
         Lasallecrm\Listmanagement\ListmanagementServiceProvider::class,
-        Lasallecrm\Todo\TodoServiceProvider::class
+        Lasallecrm\Todo\TodoServiceProvider::class,
+
+    /*
+     * My Package's EVENT Service Providers...
+     */
+        Lasallecms\Usermanagement\UsermanagementEventServiceProvider::class,
     ],
+
+
 
     /*
     |--------------------------------------------------------------------------
