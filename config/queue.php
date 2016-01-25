@@ -32,7 +32,7 @@ return [
     'connections' => [
 
         'sync' => [
-            'driver' => 'sync',
+            'driver' => 'beanstalkd',
         ],
 
         'database' => [

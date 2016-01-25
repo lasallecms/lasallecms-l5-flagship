@@ -35,7 +35,8 @@
         "roumen/sitemap": "2.5.*",
         "spatie/laravel-backup": "2.*",
         "league/flysystem-aws-s3-v3": "~1.0",
-        "aloha/twilio": "^2.0"
+        "aloha/twilio": "^2.0",
+        "pda/pheanstalk": "3.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
