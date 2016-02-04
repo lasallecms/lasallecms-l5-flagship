@@ -11,6 +11,18 @@
 [![Software License](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Laravel](https://img.shields.io/badge/Laravel-v5.1-brightgreen.svg?style=flat-square)](http://laravel.com)
 
+## ATTRIBUTION
+
+My Flagship App is the Laravel app, version/branch 5.1, modified for use with my LaSalle Software packages. 
+ 
+The sole reason for modifying the Laravel app is convenience, as there are a few things extra that need to be here, and it would sure help if I could do these mods once.
+
+My Flagship App is completely the Laravel app, with some mods.
+
+[https://github.com/laravel/laravel/tree/5.1](https://github.com/laravel/laravel/tree/5.1)
+
+
+
 ## NOTE
 
 This is the flagship app for my LaSalle Software. 

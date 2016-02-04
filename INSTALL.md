@@ -1,3 +1,10 @@
+# CAVEAT
+
+These instructions may be out of date, as I am constantly tweaking. 
+
+The bright side is that there is no proprietary installation. The installation is basically composer installs of straight Laravel packages. 
+
+
 # INSTALLATION
 
 LaSalle Software is comprised of packages (ie, add-ons). You can install the Laravel app as usual, and then install each package individually. 
@@ -62,6 +69,9 @@ Populate your database tables with the included initial data using Artisan:
 php artisan db:seed
 ```
 
+The seed files contain live data for lookup tables. So do not skip this step.
+
+
 ## Change the Default User Details
 
 The default Super Administrator (my ode to Joomla) is "admin@example.org" with the password "password" (omit quotes). It is a good idea to log into the admin with this user to ensure that you can log in; and, then change the user details & password. 
@@ -74,9 +84,15 @@ Please note that this username is listed in config/auth.php in "users_allowed_to
 
 Modify .env; and, the Laravel and LaSalle config files in the /config/ folder. 
 
+If you are using Forge, then I suggest you populate your .env file, and then copy-paste to your Forge site. This local .env file should ignored in your git repo. 
+
+There are a lot of LaSalle Software config files, They are modest files, except of special note lasallecmsusermanagement.php. You may wonder why a certain setting is in a LaSalle config file when it seems more logical that it should be in another LaSalle config file, but Big Important Executive Decisions had to be made, so c'est la vie! Lasalle Software config file names begin with "Lasallecms".
+
 ## Folder Permissions
 
 The /storage/ folder in particular should be read/write. Wrong folder permissions is a common reason why the site will not display at this point. 
+
+Folder permission problems is the source of many problems. Especially dramatic are the problems where it seems like your app crashed -- because there were problems writing to the storage/logs folder. 
 
 ## bootstrap/cache/services.json
 
@@ -88,7 +104,9 @@ At this point, you should be able to login to the admin (yes, the subfolder is "
 
 If everything seems ok, then run "php artisan" -- sometimes an error will display. 
 
+Also, if you enable two factor authorization, but forget to enter your country code & cell number into the users table directly upon initial set-up, you will be see the message that you cannot login to the admin so please contact your administrator.  
+
 ## Front End
 
-You might have to create a quick front-end blade file at "pages/home.blade.php" in your front-end view folder, in order to see something. 
+There is no default front-end. A welcome message should display in your browser, courtesy of my LaSalleCMS Front-end package.  I want you to really think about, and invest in, your front-end, so I do not feel entirely guilty about not having any "themes". You have a turn-key administrative site and my administrative form automation to help you turn your attention to your front end. 
 

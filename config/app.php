@@ -1,5 +1,33 @@
 <?php
 
+/**
+ *
+ * LaSalle Content Management System, based on the Laravel 5 Framework
+ * Copyright (C) 2015 - 2016  The South LaSalle Trading Corporation
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *
+ * @package    LaSalle Content Management System
+ * @link       http://LaSalleCMS.com
+ * @copyright  (c) 2015 - 2016, The South LaSalle Trading Corporation
+ * @license    http://www.gnu.org/licenses/gpl-3.0.html
+ * @author     The South LaSalle Trading Corporation
+ * @email      info@southlasalle.com
+ *
+ */
+
 return [
 
     /*
@@ -12,8 +40,7 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
-
-    'debug' => env('APP_DEBUG'),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -25,7 +52,6 @@ return [
     | your application so that it is used when running Artisan tasks.
     |
     */
-
     'url' => env('APP_URL'),
 
     /*
@@ -38,7 +64,6 @@ return [
     | ahead and set this to a sensible default for you out of the box.
     |
     */
-
     'timezone' => 'America/Toronto',
 
     /*
@@ -51,7 +76,6 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
-
     'locale' => 'en',
 
     /*
@@ -64,7 +88,6 @@ return [
     | the language folders that are provided through your application.
     |
     */
-
     'fallback_locale' => 'en',
 
     /*
@@ -77,8 +100,7 @@ return [
     | will not be safe. Please do this before deploying an application!
     |
     */
-
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'SomeRandomStringSomeRandomString'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -94,8 +116,7 @@ return [
     | Available Settings: "single", "daily", "syslog", "errorlog"
     |
     */
-
-    'log' => 'daily',
+    'log' => env('APP_LOG', 'single'),
 
     /*
     |--------------------------------------------------------------------------
@@ -107,7 +128,6 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
-
     'providers' => [
 
         /*
@@ -141,6 +161,7 @@ return [
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
@@ -190,7 +211,6 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
-
     'aliases' => [
 
         'App'       => Illuminate\Support\Facades\App::class,
@@ -206,9 +226,9 @@ return [
         'Eloquent'  => Illuminate\Database\Eloquent\Model::class,
         'Event'     => Illuminate\Support\Facades\Event::class,
         'File'      => Illuminate\Support\Facades\File::class,
+        'Gate'      => Illuminate\Support\Facades\Gate::class,
         'Hash'      => Illuminate\Support\Facades\Hash::class,
         'Input'     => Illuminate\Support\Facades\Input::class,
-        'Inspiring' => Illuminate\Foundation\Inspiring::class,
         'Lang'      => Illuminate\Support\Facades\Lang::class,
         'Log'       => Illuminate\Support\Facades\Log::class,
         'Mail'      => Illuminate\Support\Facades\Mail::class,

@@ -5,7 +5,7 @@ namespace App\Console;
 /**
  *
  * LaSalle Content Management System, based on the Laravel 5 Framework
- * Copyright (C) 2015  The South LaSalle Trading Corporation
+ * Copyright (C) 2015 - 2016  The South LaSalle Trading Corporation
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ namespace App\Console;
  *
  * @package    LaSalle Content Management System
  * @link       http://LaSalleCMS.com
- * @copyright  (c) 2015, The South LaSalle Trading Corporation
+ * @copyright  (c) 2015 - 2016, The South LaSalle Trading Corporation
  * @license    http://www.gnu.org/licenses/gpl-3.0.html
  * @author     The South LaSalle Trading Corporation
  * @email      info@southlasalle.com
@@ -61,12 +61,15 @@ class Kernel extends ConsoleKernel
         $filePath = base_path() . 'output_from_scheduler';
         $emailTo  = "foo@example.com";
 
+        // Assumed that you want the backups. I recommend you at least backup
+        // your database this way nightly, even when you use another program for backing up
         $schedule->command('BackupCommand')
                  ->dailyAt('04:00')
                  ->sendOutputTo($filePath)
                  ->emailOutputTo($emailTo)
         ;
 
+        // Assumed that you want the sitemap!
         $schedule->call(function () {
             return Redirect::route('sitemap');
         })->dailyAt('04:30');

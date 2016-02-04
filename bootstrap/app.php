@@ -11,20 +11,9 @@
 |
 */
 
-// SCENARIO 1: USE THE NATIVE LARAVEL APPLICATION FILE
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
-
-
-// SCENARIO 2: USE LASALLE's CUSTOM APP\APPLICATION.php TO OVERRIDE THE PARENT's METHODS
-/*
-$app = new App\Application(
-	realpath(__DIR__.'/../')
-);
-*/
-
-
 
 /*
 |--------------------------------------------------------------------------
