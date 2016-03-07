@@ -2,14 +2,14 @@
 
 These instructions may be out of date, as I am constantly tweaking. 
 
-The bright side is that there is no proprietary installation. The installation is basically composer installs of straight Laravel packages. 
+The bright side is that there is no proprietary installation. The installation is Composer installs of straight Composer installable packages. 
 
 
 # INSTALLATION
 
-LaSalle Software is comprised of packages (ie, add-ons). You can install the Laravel app as usual, and then install each package individually. 
+LaSalle Software is comprised of installable packages. You can install this Flagship app first, and then install each package individually. 
 
-To make things easier, I set-up this app with LaSalle packages pre-integrated. 
+To make things easier, I set-up this app with LaSalle packages pre-integrated (update: some LaSalle packages are not pre-integrated, written as I pass the 20 such packages).
 
 Also pre-integrated are some really good third party packages that must be installed. 
  
