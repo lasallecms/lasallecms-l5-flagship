@@ -197,6 +197,7 @@ return [
      * My Package's EVENT Service Providers...
      */
         Lasallecms\Usermanagement\UsermanagementEventServiceProvider::class,
+        Lasallecms\Lasallecmsapi\LasallecmsapiEventServiceProvider::class,
     ],
 
 
