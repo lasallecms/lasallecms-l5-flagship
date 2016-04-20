@@ -192,12 +192,17 @@ return [
         Lasallecrm\Lasallecrmadmin\LasallecrmadminServiceProvider::class,
         Lasallecrm\Listmanagement\ListmanagementServiceProvider::class,
         Lasallecrm\Todo\TodoServiceProvider::class,
+        Lasallecms\Installedpackages\InstalledpackagesServiceProvider::class,
+        Lasallecms\Shortmessageservice\ShortmessageserviceServiceProvider::class,
+        Lasallecrm\Lasallecrmemail\LasallecrmemailServiceProvider::class,
+        Lasallecrm\Lasallecrmcontact\LasallecrmcontactServiceProvider::class,
 
     /*
      * My Package's EVENT Service Providers...
      */
         Lasallecms\Usermanagement\UsermanagementEventServiceProvider::class,
         Lasallecms\Lasallecmsapi\LasallecmsapiEventServiceProvider::class,
+        Lasallecrm\Lasallecrmemail\LasallecrmemailEventServiceProvider::class,
     ],
 
 
