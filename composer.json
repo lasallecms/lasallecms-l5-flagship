@@ -33,6 +33,8 @@
         "lasallecms/installedpackages": "1.*",
         "lasallecms/lasallecmsshortmessageservice": "1.*",
         "lasallecrm/lasallecrmemail": "1.*",
+        "lasallecrm/lasallecmsmailgun": "1.*",
+        "lasallecrm/lasallecmstokenbasedlogin": "1.*",
         "lasallecrm/lasallecrmcontact": "1.*",
         "intervention/image": "~2.3",
         "roumen/feed": "~2.10",

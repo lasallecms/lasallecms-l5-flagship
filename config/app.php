@@ -196,6 +196,8 @@ return [
         Lasallecms\Shortmessageservice\ShortmessageserviceServiceProvider::class,
         Lasallecrm\Lasallecrmemail\LasallecrmemailServiceProvider::class,
         Lasallecrm\Lasallecrmcontact\LasallecrmcontactServiceProvider::class,
+        Lasallecms\Lasallecrmmailgun\LasallecmsmailgunServiceProvider::class,
+        Lasallecms\Lasallecmstokenbasedlogin\LasallecmstokenbasedloginServiceProvider::class,
 
     /*
      * My Package's EVENT Service Providers...
