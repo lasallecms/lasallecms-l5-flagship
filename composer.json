@@ -32,7 +32,7 @@
         "lasallecrm/todo": "1.*",
         "lasallecms/installedpackages": "1.*",
         "lasallecms/lasallecmsshortmessageservice": "1.*",
-        "lasallecrm/lasallecrmemail": "1.*",
+        "lasallecms/lasallecmsemail": "1.*",
         "lasallecrm/lasallecmsmailgun": "1.*",
         "lasallecrm/lasallecmstokenbasedlogin": "1.*",
         "lasallecrm/lasallecrmcontact": "1.*",

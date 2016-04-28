@@ -194,9 +194,9 @@ return [
         Lasallecrm\Todo\TodoServiceProvider::class,
         Lasallecms\Installedpackages\InstalledpackagesServiceProvider::class,
         Lasallecms\Shortmessageservice\ShortmessageserviceServiceProvider::class,
-        Lasallecrm\Lasallecrmemail\LasallecrmemailServiceProvider::class,
+        Lasallecrm\Lasallecmsemail\LasallecmsemailServiceProvider::class,
         Lasallecrm\Lasallecrmcontact\LasallecrmcontactServiceProvider::class,
-        Lasallecms\Lasallecrmmailgun\LasallecmsmailgunServiceProvider::class,
+        Lasallecms\Lasallecmsmailgun\LasallecmsmailgunServiceProvider::class,
         Lasallecms\Lasallecmstokenbasedlogin\LasallecmstokenbasedloginServiceProvider::class,
 
     /*
