@@ -204,7 +204,7 @@ return [
      */
         Lasallecms\Usermanagement\UsermanagementEventServiceProvider::class,
         Lasallecms\Lasallecmsapi\LasallecmsapiEventServiceProvider::class,
-        Lasallecrm\Lasallecrmemail\LasallecrmemailEventServiceProvider::class,
+        Lasallecms\Lasallecmsemail\LasallecmsemailEventServiceProvider::class,
     ],
 
 
