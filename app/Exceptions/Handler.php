@@ -36,6 +36,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
+
 class Handler extends ExceptionHandler
 {
     /**
@@ -73,6 +74,17 @@ class Handler extends ExceptionHandler
         if ($e instanceof ModelNotFoundException) {
             $e = new NotFoundHttpException($e->getMessage(), $e);
         }
+
+        // START: Added by Bob
+        if ($e instanceof \PDOException) {
+            return response()->view("errors.pdoexception", ['exception' => $e], 501, []);
+        }
+
+        if ($e instanceof TokenMismatchException) {
+           $message = "For security reasons, forms do not work when inactive for a while. Please refresh the page and fill in the form again.";
+           return redirect(route('login'))->with('message', $message);
+        }
+        // END: Added by Bob
 
         return parent::render($request, $e);
     }
