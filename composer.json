@@ -36,6 +36,7 @@
         "lasallecms/lasallecmsmailgun": "1.*",
         "lasallecms/lasallecmstokenbasedlogin": "1.*",
         "lasallecrm/lasallecrmcontact": "1.*",
+        "lasallecms/lasallecmsbackup": "1.*",
         "intervention/image": "~2.3",
         "roumen/feed": "~2.10",
         "roumen/sitemap": "2.6.*",
