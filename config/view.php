@@ -30,6 +30,6 @@ return [
     |
     */
 
-    'compiled' => realpath(storage_path('framework/views')),
+    'compiled' => env('ENVOYER_PATH_VIEW', realpath(storage_path('framework/views'))),
 
 ];

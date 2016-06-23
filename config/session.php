@@ -57,7 +57,7 @@ return [
     |
     */
 
-    'files' => storage_path('framework/sessions'),
+    'files' => env('ENVOYER_PATH_SESSION', storage_path('framework/sessions')),
 
     /*
     |--------------------------------------------------------------------------
@@ -148,6 +148,6 @@ return [
     |
     */
 
-    'secure' => false,
+    'secure' =>  env('APP_SITE_SECURE', false),
 
 ];

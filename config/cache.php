@@ -44,7 +44,7 @@ return [
 
         'file' => [
             'driver' => 'file',
-            'path'   => storage_path('framework/cache'),
+            'path'   => env('ENVOYER_PATH_CACHE', storage_path('framework/cache')),
         ],
 
         'memcached' => [
