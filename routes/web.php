@@ -28,6 +28,23 @@
  *
  */
 
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| This file is where you may define all of the routes that are handled
+| by your application. Just tell Laravel the URIs it should respond
+| to using a Closure or controller method. Build something great!
+|
+*/
+
+// You'll end up commenting out this route in production, but good to have
+// when first creating a project
+Route::get('/', function () {
+    // return view('welcome');
+});
+
 
 /* *********************************************************************************************** */
 /* *********************************************************************************************** */
@@ -43,10 +60,10 @@
 /* *********************************************************************************************** */
 /* *********************************************************************************************** */
 
-
 // single post by slug, or category listing (by title)
 // originally in my front-end package
 $router->get('{slug}', '\Lasallecms\Lasallecmsfrontend\Http\Controllers\PostController@DisplaySinglePost')->where('slug', '!=', 'admin');
+
 
 // Home
 // originally in my front-end package
@@ -65,3 +82,5 @@ Route::get('contact_form_thank_you',[
     'uses' => 'ContactController@thankyou'
 ]);
 */
+
+

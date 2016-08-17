@@ -1,0 +1,1 @@
+L5.3: There are no app/Http/Controllers/Auth/ controllers (https://github.com/laravel/laravel/tree/develop/app/Http/Controllers/Auth) because LaSalle Software's usermanagement package handles this stuff. 
