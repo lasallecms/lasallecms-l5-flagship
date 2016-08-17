@@ -1,5 +1,33 @@
 <?php
 
+/**
+ *
+ * LaSalle Content Management System, based on the Laravel 5 Framework
+ * Copyright (C) 2015 - 2016  The South LaSalle Trading Corporation
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *
+ * @package    LaSalle Content Management System
+ * @link       http://LaSalleCMS.com
+ * @copyright  (c) 2015 - 2016, The South LaSalle Trading Corporation
+ * @license    http://www.gnu.org/licenses/gpl-3.0.html
+ * @author     The South LaSalle Trading Corporation
+ * @email      info@southlasalle.com
+ *
+ */
+
 return [
 
     /*
@@ -15,7 +43,6 @@ return [
     |            "memcached", "redis", "array"
     |
     */
-
     'driver' => env('SESSION_DRIVER', 'file'),
 
     /*
@@ -28,7 +55,6 @@ return [
     | to immediately expire on the browser closing, set that option.
     |
     */
-
     'lifetime' => 120,
 
     'expire_on_close' => false,
@@ -43,7 +69,6 @@ return [
     | automatically by Laravel and you can use the Session like normal.
     |
     */
-
     'encrypt' => false,
 
     /*
@@ -56,7 +81,6 @@ return [
     | location may be specified. This is only needed for file sessions.
     |
     */
-
     'files' => env('ENVOYER_PATH_SESSION', storage_path('framework/sessions')),
 
     /*
@@ -69,7 +93,6 @@ return [
     | correspond to a connection in your database configuration options.
     |
     */
-
     'connection' => null,
 
     /*
@@ -82,8 +105,19 @@ return [
     | provided for you; however, you are free to change this as needed.
     |
     */
-
     'table' => 'sessions',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Session Cache Store
+    |--------------------------------------------------------------------------
+    |
+    | When using the "apc" or "memcached" session drivers, you may specify a
+    | cache store that should be used for these sessions. This value must
+    | correspond with one of the application's configured cache stores.
+    |
+    */
+    'store' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +129,6 @@ return [
     | happen on a given request. By default, the odds are 2 out of 100.
     |
     */
-
     'lottery' => [2, 100],
 
     /*
@@ -108,7 +141,6 @@ return [
     | new session cookie is created by the framework for every driver.
     |
     */
-
     'cookie' => 'laravel_session',
 
     /*
@@ -121,7 +153,6 @@ return [
     | your application but you are free to change this when necessary.
     |
     */
-
     'path' => '/',
 
     /*
@@ -134,8 +165,7 @@ return [
     | available to in your application. A sensible default has been set.
     |
     */
-
-    'domain' => null,
+    'domain' => env('SESSION_DOMAIN', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -147,7 +177,6 @@ return [
     | the cookie from being sent to you if it can not be done securely.
     |
     */
-
     'secure' =>  env('APP_SITE_SECURE', false),
 
 ];

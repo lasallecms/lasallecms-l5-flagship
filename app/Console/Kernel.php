@@ -33,6 +33,13 @@ namespace App\Console;
 
 // http://laravel.com/docs/5.1/scheduling
 
+// In Forge, in the server's "Scheduler" tab, set up a new Scheduled Job:
+// php /home/forge/domain.com/current/artisan schedule:run
+// for every minute, or nightly (which is midnight) depending on your needs.
+
+// FYI: for Akeeba Backup Pro Solo, here's a sample Scheduled Job:
+// custom  03***  php /home/forge/backup.domain.com/public/cli/backup.php --profile=1
+
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -45,7 +52,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \Spatie\Backup\Commands\BackupCommand::class,
+        // blank
     ];
 
 
@@ -61,17 +68,24 @@ class Kernel extends ConsoleKernel
         $filePath = base_path() . 'output_from_scheduler';
         $emailTo  = "foo@example.com";
 
-        // Assumed that you want the backups. I recommend you at least backup
-        // your database this way nightly, even when you use another program for backing up
-        $schedule->command('BackupCommand')
-                 ->dailyAt('04:00')
-                 ->sendOutputTo($filePath)
-                 ->emailOutputTo($emailTo)
-        ;
 
         // Assumed that you want the sitemap!
         $schedule->call(function () {
             return Redirect::route('sitemap');
-        })->dailyAt('04:30');
+        })
+        ->dailyAt('04:30')
+        //->thenPing('http://beats.envoyer.io/heartbeat/zN89z09Ifs8A2rg')
+        ;
+    }
+
+
+    /**
+     * Register the Closure based commands for the application.
+     *
+     * @return void
+     */
+    protected function commands()
+    {
+        require base_path('routes/console.php');
     }
 }

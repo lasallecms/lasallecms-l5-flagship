@@ -12,6 +12,18 @@ return [
     | your application here. By default, Laravel is setup for SMTP mail.
     |
     | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "ses", "log"
+    | 
+    | 
+    | WRITING EMAILS TO LOGS ("PRETEND") IN LOCAL DEVELOPMENT:
+    | * https://laravel.com/docs/5.2/mail#mail-and-local-development
+    | 
+    | "Finally, you may use a service like Mailtrap and the smtp driver to send 
+    | your e-mail messages to a "dummy" mailbox where you may view them in a true 
+    | e-mail client. This approach has the benefit of allowing you to actually 
+    | inspect the final e-mails in Mailtrap's message viewer."
+    | 
+    | https://mailtrap.io/pricing
+    | * free forever, 1 inbox,...
     |
     */
 
@@ -107,18 +119,5 @@ return [
     */
 
     'sendmail' => '/usr/sbin/sendmail -bs',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Mail "Pretend"
-    |--------------------------------------------------------------------------
-    |
-    | When this option is enabled, e-mail will not actually be sent over the
-    | web and will instead be written to your application's logs files so
-    | you may inspect the message. This is great for local development.
-    |
-    */
-
-    'pretend' => env('MAIL_PRETEND', false),
 
 ];

@@ -31,10 +31,12 @@ namespace App\Exceptions;
  */
 
 use Exception;
+use Illuminate\Auth\AuthenticationException;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 
 class Handler extends ExceptionHandler
@@ -45,8 +47,11 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        HttpException::class,
-        ModelNotFoundException::class,
+        \Illuminate\Auth\AuthenticationException::class,
+        \Illuminate\Auth\Access\AuthorizationException::class,
+        \Symfony\Component\HttpKernel\Exception\HttpException::class,
+        \Illuminate\Database\Eloquent\ModelNotFoundException::class,
+        \Illuminate\Validation\ValidationException::class,
     ];
 
     /**
@@ -54,38 +59,54 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param  \Exception  $e
+     * @param  \Exception  $exception
      * @return void
      */
-    public function report(Exception $e)
+    public function report(Exception $exception)
     {
-        return parent::report($e);
+        return parent::report($exception);
     }
 
     /**
      * Render an exception into an HTTP response.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $e
+     * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $e)
+    public function render($request, Exception $exception)
     {
-        if ($e instanceof ModelNotFoundException) {
-            $e = new NotFoundHttpException($e->getMessage(), $e);
+        if ($exception instanceof ModelNotFoundException) {
+            $exception = new NotFoundHttpException($exception->getMessage(), $exception);
         }
 
         // START: Added by Bob
-        if ($e instanceof \PDOException) {
-            return response()->view("errors.pdoexception", ['exception' => $e], 501, []);
+        if ($exception instanceof \PDOException) {
+            return response()->view("errors.pdoexception", ['exception' => $exception], 501, []);
         }
 
-        if ($e instanceof TokenMismatchException) {
+        if ($exception instanceof TokenMismatchException) {
            $message = "For security reasons, forms do not work when inactive for a while. Please refresh the page and fill in the form again.";
            return redirect(route('login'))->with('message', $message);
         }
         // END: Added by Bob
 
         return parent::render($request, $e);
+    }
+
+
+    /**
+     * Convert an authentication exception into an unauthenticated response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Auth\AuthenticationException  $exception
+     * @return \Illuminate\Http\Response
+     */
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+        if ($request->expectsJson()) {
+            return response()->json(['error' => 'Unauthenticated.'], 401);
+        }
+        return redirect()->guest('login');
     }
 }
