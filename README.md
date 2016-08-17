@@ -9,17 +9,17 @@
 [![Latest Unstable Version](https://poser.pugx.org/lasallecms/lasallecms/v/unstable.svg)](https://packagist.org/packages/lasallecms/lasallecms)
 [![GitHub Issues](https://img.shields.io/github/issues/lasallecms/lasallecms-l5-flagship.svg)](https://github.com/lasallecms/lasallecms-l5-flagship/issues)
 [![Software License](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Laravel](https://img.shields.io/badge/Laravel-v5.1-brightgreen.svg?style=flat-square)](http://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-v5.3-brightgreen.svg?style=flat-square)](http://laravel.com)
 
 ## ATTRIBUTION
 
-My Flagship App is the Laravel app, version/branch 5.1, modified for use with my LaSalle Software packages. 
+My Flagship App is the Laravel app, version/branch 5.3, modified for use with my LaSalle Software packages. 
  
 The sole reason for modifying the Laravel app is convenience, as there are a few things extra that need to be here, and it would sure help if I could do these mods once.
 
 My Flagship App is completely the Laravel app, with some mods.
 
-[https://github.com/laravel/laravel/tree/5.1](https://github.com/laravel/laravel/tree/5.1)
+[https://github.com/laravel/laravel/tree/5.3](https://github.com/laravel/laravel/tree/5.3)
 
 
 
@@ -29,14 +29,14 @@ This is the flagship app for my LaSalle Software.
 
 ## Summary
 
-LaSalle Software is my Laravel 5.1 based web application software. 
+LaSalle Software is my Laravel 5.3 based web application software. 
 
 LaSalle Software is comprised of inter-related packages that work together. This flagship app is the starting point for LaSalle Software based apps.
 
 
 ## Description
 
-Laravel 5.1 is a superb PHP framework. I am very happy that I chose to specialize in Laravel. 
+Laravel 5.3 is a superb PHP framework. I am very happy that I chose to specialize in Laravel. 
 
 Laravel is not in-and-of-itself a ready-made web application that you just unfurl and your basic site is there. For instance, there is no built-in blog. By design. Laravel is a framework with which to build your web app. It is not itself a web app. 
 
