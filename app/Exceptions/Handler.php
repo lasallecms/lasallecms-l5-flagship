@@ -91,7 +91,7 @@ class Handler extends ExceptionHandler
         }
         // END: Added by Bob
 
-        return parent::render($request, $e);
+        return parent::render($request, $exception);
     }
 
 
