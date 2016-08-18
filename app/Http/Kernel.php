@@ -30,6 +30,23 @@ namespace App\Http;
  *
  */
 
+
+
+/* 
+http://stackoverflow.com/questions/34438463/laravel-5-2-errors-not-appearing-in-blade
+
+Moved:
+* \Illuminate\Session\Middleware\StartSession::class, 
+* \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+
+from protected $middlewareGroups 
+
+to protected $middleware
+
+*/
+
+
+
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -44,6 +61,9 @@ class Kernel extends HttpKernel
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Lasallecms\Helpers\Middleware\SecureURL::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+
     ];
 
     /**
@@ -55,8 +75,6 @@ class Kernel extends HttpKernel
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-            \Illuminate\Session\Middleware\StartSession::class,
-            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
