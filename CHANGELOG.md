@@ -1,5 +1,15 @@
 # CHANGE LOG
 
+## VERSION 1.3.0 - 2016-08-23
+
+### All GitHub issues for this version
+* [https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=milestone%3A%22Version+1.3.0%22+is%3Aclosed](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=milestone%3A%22Version+1.3.0%22+is%3Aclosed)
+
+## VERSION 1.2.0 - 2016-06-23
+
+### All GitHub issues for this version
+* [https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=milestone%3A%22Version+1.2.0%22+is%3Aclosed](https://github.com/lasallecms/lasallecms-l5-flagship/issues?q=milestone%3A%22Version+1.2.0%22+is%3Aclosed)
+
 ## VERSION 1.01 - 2016-02-08
 
 ### All GitHub issues for this version
