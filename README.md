@@ -23,6 +23,9 @@ My Flagship App is completely the Laravel app, with some mods.
 
 
 
+[MUST READ CAVEAT ABOUT THIS PACKAGE at https://lasallesoftware.ca/caveat_about_lasalle_software_version_one.php](https://lasallesoftware.ca/caveat_about_lasalle_software_version_one.php)
+
+
 ## NOTE
 
 This is the flagship app for my LaSalle Software. 
